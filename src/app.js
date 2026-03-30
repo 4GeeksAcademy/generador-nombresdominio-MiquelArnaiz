@@ -15,11 +15,13 @@
 pronoun.forEach((pronoun2) =>{
   adj.forEach((adj2) => {
     noun.forEach((noun2) => {
-      dominios += pronoun2 + adj2 + noun2 + ".com<br>"
+      dominios +=`${pronoun2}${adj2}${noun2}.com<br>`
      
     })
    })
   })
-return dominios
+ return dominios
 }
-document.getElementById("nombre").innerHTML = web();
+
+//window.onload = () => {
+//document.querySelector("#nombre").innerHTML = web();}
